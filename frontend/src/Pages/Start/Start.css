@@ -1,0 +1,113 @@
+:root {
+  --color-purple: #4c1dd2;
+  --color-purple-btn: rgba(88, 34, 244, 0.58);
+  --color-withe-header: rgba(237, 235, 235, 0.85);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 18;
+  line-height: 140%;
+  color: #1f1e1e;
+  background-color: var(--color-purple);
+  background-image: url('../Assets/logoBg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  background-attachment: fixed;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.logo {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: flex-end;
+  width: 464px;
+  height: 138px;
+}
+
+.admin__logo {
+  position: absolute;
+  margin-left: 560px;
+  width: 60px;
+  height: 60px;
+}
+
+.block {
+  display: flex;
+  position: relative;
+  background-color: var(--color-withe-header);
+  width: 1085px;
+  height: 778px;
+  margin-bottom: 135px;
+  border-radius: 33px;
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 33px;
+}
+
+.block__text {
+  position: absolute;
+  height: 114.42px;
+  font-family: 'Inter',
+    sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  margin: 50px;
+  margin-left: 139px;
+  font-size: 50px;
+  line-height: 80px;
+  text-align: center;
+  color: #fff;
+}
+
+.block__content {
+  position: absolute;
+  font-family: 'Inter',
+    sans-serif;
+  font-style: normal;
+  width: 770px;
+  font-weight: 500;
+  font-size: 30px;
+  margin: 170px;
+  margin-top: 225px;
+  line-height: 36px;
+  text-align: center;
+  color: #fff;
+}
+
+.block__content--key {
+  position: absolute;
+  font-family: 'Inter',
+    sans-serif;
+  font-style: normal;
+  width: 340px;
+  font-weight: 800;
+  font-size: 25px;
+  margin-top: 435px;
+  margin-left: 380px;
+  line-height: 30px;
+  text-align: center;
+  color: #fff;
+}
+
+.block__input {
+  position: relative;
+  margin-top: 555px;
+  margin-left: 440px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
