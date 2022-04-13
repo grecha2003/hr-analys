@@ -32,6 +32,9 @@ body {
 
 .logo {
   display: flex;
+  position: relative;
+  right: 165px;
+  top: 2px;
   align-content: center;
   align-items: center;
   justify-content: flex-end;
@@ -41,7 +44,7 @@ body {
 
 .admin__logo {
   position: absolute;
-  margin-left: 560px;
+  margin-left: 220px;
   width: 60px;
   height: 60px;
 }
@@ -105,8 +108,8 @@ body {
 
 .block__input {
   position: relative;
-  margin-top: 555px;
-  margin-left: 440px;
+  margin-top: 510px;
+  margin-left: 403px;
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
