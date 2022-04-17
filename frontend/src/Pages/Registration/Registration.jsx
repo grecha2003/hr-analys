@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Form, Row, Col, Button, Container } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 
 import logo from '../Assets/logo.png'
@@ -32,9 +33,11 @@ class Registration extends Component {
                     <Form.Control type="email" size="lg" />
                   </Form.Group>
                 </Row>
-                <Button variant="primary" size="lg" style={{ margin: "105px 0px 0px 390px", width: "300px", height: "62px" }}>
-                  Приступить к тесту
-                </Button>
+                <Link to="/tests">
+                  <Button variant="primary" size="lg" style={{ margin: "160px 0px 0px 390px", width: "300px", height: "78.18px" }}>
+                    Приступить к тесту
+                  </Button>
+                </Link>
               </Container>
             </div>
           </div>

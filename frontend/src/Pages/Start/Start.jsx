@@ -35,6 +35,7 @@ export default class Start extends Component {
                 <div className="block__input">
                   <Form.Label htmlFor="inputPassword5"></Form.Label>
                   <Form.Control
+                    style={{ marginLeft: "25px" }}
                     id="inputPassword5"
                     aria-describedby="passwordHelpBlock"
                     placeholder='Введите ключ'

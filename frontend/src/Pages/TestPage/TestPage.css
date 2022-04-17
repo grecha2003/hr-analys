@@ -1,0 +1,62 @@
+.radio__check {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 72px;
+}
+
+Form {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 302.24px;
+  margin-top: 260px;
+}
+
+
+.btn {
+  position: absolute;
+  margin-top: 505px;
+  width: 300px;
+  height: 78.18px;
+}
+
+.mb-3 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 310px;
+}
+
+.mb-3 label {
+  margin: 4px 0px 0px 33px;
+}
+
+.quests__block {
+  line-height: 30px;
+  color: #FFFFFF;
+  margin: 80px 0px 0px 120px
+}
+
+.quests__block h1 {
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.quests__block p {
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140px;
+  color: #FFFFFF;
+}
