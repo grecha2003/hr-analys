@@ -64,12 +64,12 @@ body {
 .block__text {
   position: absolute;
   height: 114.42px;
+  width: 90%;
+  margin: 46px 0px 0px 58px;
   font-family: 'Inter',
     sans-serif;
   font-style: normal;
   font-weight: 800;
-  margin: 50px;
-  margin-left: 139px;
   font-size: 50px;
   line-height: 80px;
   text-align: center;
@@ -99,7 +99,7 @@ body {
   width: 340px;
   font-weight: 800;
   font-size: 25px;
-  margin-top: 435px;
+  margin-top: 470px;
   margin-left: 380px;
   line-height: 30px;
   text-align: center;
@@ -108,7 +108,7 @@ body {
 
 .block__input {
   position: relative;
-  margin-top: 510px;
+  margin-top: 547px;
   margin-left: 403px;
   display: flex;
   justify-content: flex-end;

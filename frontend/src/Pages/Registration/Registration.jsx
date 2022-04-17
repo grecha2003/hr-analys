@@ -34,7 +34,7 @@ class Registration extends Component {
                   </Form.Group>
                 </Row>
                 <Link to="/tests">
-                  <Button variant="primary" size="lg" style={{ margin: "160px 0px 0px 390px", width: "300px", height: "78.18px" }}>
+                  <Button variant="primary" size="lg" style={{ margin: "195px 0px 0px 390px", width: "300px", height: "78.18px" }}>
                     Приступить к тесту
                   </Button>
                 </Link>

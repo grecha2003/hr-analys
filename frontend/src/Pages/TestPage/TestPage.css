@@ -52,11 +52,21 @@ Form {
   font-size: 26px;
 }
 
-.quests__block p {
+.quests__block p:nth-child(1) {
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.quests__block p:nth-child(4) {
+  position: relative;
   font-family: 'Arial';
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  line-height: 140px;
+  line-height: 60px;
   color: #FFFFFF;
 }

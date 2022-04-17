@@ -7,6 +7,14 @@ import logo from '../Assets/logo.png';
 import "./TestPage.css"
 
 class TestPage extends Component {
+  state = {
+    list: 0
+  };
+
+  add = () => {
+    this.setState({ list: this.state.list + 1 });
+  }
+
   render() {
     return (
       <>
@@ -16,8 +24,8 @@ class TestPage extends Component {
               <img src={logo} alt="logo" className="logo" />
             </div>
             <div className="block">
-              <p id="pnumber"></p>
               <div className='quests__block'>
+                <p style={{ color: "#fff" }}>{this.state.list}/36</p>
                 <h1 id="quest1">1. Меня удовлетворит только очень высокий уровень жизни.</h1>
                 <h1 id="quest2">2. Я хочу иметь значительное влияние на окружающих.</h1>
                 <p>Выберите один вариант ответа:</p>
@@ -54,11 +62,10 @@ class TestPage extends Component {
                     />
                   </div>
                 ))}
-                <Button type="button" variant="primary" size="lg">
+                <Button onClick={this.add} type="button" variant="primary" size="lg">
                   Следующий вопрос
                 </Button>
               </Form>
-
             </div>
           </div>
         </body>
