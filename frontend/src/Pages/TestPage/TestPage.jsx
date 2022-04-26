@@ -1,18 +1,38 @@
 import React, { Component } from 'react';
-import { Form, Button } from 'react-bootstrap'
+import { Form, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 import logo from '../Assets/logo.png';
+import qText from './QUEST';
 
-import "./TestPage.css"
+import './TestPage.css';
 
 class TestPage extends Component {
-  state = {
-    list: 0
-  };
+  constructor(props) {
+    super(props);
 
-  add = () => {
-    this.setState({ list: this.state.list + 1 });
+    this.state = {
+      list: 0,
+      title1: '1. Меня удовлетворит только очень высокий уровень жизни',
+      title2: '2. Я хочу иметь значительное влияние на окружающих',
+    };
+
+    this.add = this.add.bind(this);
+  }
+
+  add() {
+    let qIndex = 0;
+    if (this.state.list !== 36) {
+      this.setState(() => ({
+        list: this.state.list + 1,
+        title1: (this.state.title1 = qText[2 * qIndex]),
+      }));
+      console.log('+');
+    } else {
+      document.getElementById('testsButton').disabled = true;
+      console.log('-');
+    }
+    console.log(this.add);
   }
 
   render() {
@@ -24,10 +44,12 @@ class TestPage extends Component {
               <img src={logo} alt="logo" className="logo" />
             </div>
             <div className="block">
-              <div className='quests__block'>
-                <p style={{ color: "#fff" }}>{this.state.list}/36</p>
-                <h1 id="quest1">1. Меня удовлетворит только очень высокий уровень жизни.</h1>
-                <h1 id="quest2">2. Я хочу иметь значительное влияние на окружающих.</h1>
+              <p className="pnumber" style={{ color: '#fff' }}>
+                {this.state.list}/36
+              </p>
+              <div className="quests__block">
+                <h1 id="quest1">{this.state.title1}</h1>
+                <h1 id="quest2">awd</h1>
                 <p>Выберите один вариант ответа:</p>
               </div>
               <Form>
@@ -62,7 +84,13 @@ class TestPage extends Component {
                     />
                   </div>
                 ))}
-                <Button onClick={this.add} type="button" variant="primary" size="lg">
+                <Button
+                  onClick={this.add}
+                  id="testsButton"
+                  type="button"
+                  variant="primary"
+                  size="lg"
+                >
                   Следующий вопрос
                 </Button>
               </Form>

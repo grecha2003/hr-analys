@@ -20,6 +20,17 @@ Form {
   margin-top: 260px;
 }
 
+.pnumber {
+  position: absolute;
+  width: 100%;
+  margin-top: 30px;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  color: #ffffff;
+  text-align: center;
+}
 
 .btn {
   position: absolute;
@@ -41,8 +52,8 @@ Form {
 
 .quests__block {
   line-height: 30px;
-  color: #FFFFFF;
-  margin: 80px 0px 0px 120px
+  color: #ffffff;
+  margin: 80px 0px 0px 120px;
 }
 
 .quests__block h1 {
@@ -52,21 +63,12 @@ Form {
   font-size: 26px;
 }
 
-.quests__block p:nth-child(1) {
-  font-family: 'Arial';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  color: #FFFFFF;
-  text-align: center;
-}
-
-.quests__block p:nth-child(4) {
-  position: relative;
+.quests__block p {
+  margin: 25px 0px 0px 45px;
   font-family: 'Arial';
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 60px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
