@@ -1,0 +1,47 @@
+.pnumber {
+	position: absolute;
+	width: 100%;
+	margin-top: 30px;
+	font-family: 'Arial';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 40px;
+	color: #ffffff;
+	text-align: center;
+}
+
+.btn {
+	position: absolute;
+	margin-top: 505px;
+	width: 300px;
+	height: 78.18px;
+}
+
+.quests__block {
+	line-height: 30px;
+	color: #ffffff;
+	margin: 80px 0px 0px 120px;
+}
+
+.quests__block h1 {
+	font-family: 'Arial';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 26px;
+}
+
+.quests__block p {
+	margin: 25px 0px 0px 45px;
+	font-family: 'Arial';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 60px;
+	color: #ffffff;
+}
+
+.qButton {
+	position: absolute;
+	left: 390px;
+	bottom: 65px;
+}

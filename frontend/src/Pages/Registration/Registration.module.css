@@ -1,0 +1,11 @@
+:root {
+	--color-purple: #4c1dd2;
+	--color-purple-btn: rgba(88, 34, 244, 0.58);
+	--color-withe-header: rgba(237, 235, 235, 0.85);
+}
+
+.reg__button {
+	position: absolute;
+	left: 390px;
+	bottom: 65px;
+}
